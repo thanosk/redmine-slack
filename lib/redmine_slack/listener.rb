@@ -200,6 +200,8 @@ private
 			value.split("\n")[0,5].join("\n") + '...'
 		elsif value.length > 100
 			value[0,97] + '...'
+		else
+			value
 		end
 
 		result = { :title => title, :value => value }
